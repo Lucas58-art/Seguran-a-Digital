@@ -90,4 +90,25 @@ function classificaSenha(tamanhoAlfabeto){
     } else if (entropia <= 35){
         forcaSenha.classList.add('fraca');
     }
+    }
+    let senha = '';
+if(checkbox[0].checked){
+    senha += letrasMaiusculas[
+    math.floor(math.random()*letrasMaiusculas.lenght)
+];
 }
+    if(checkbox[1].checked){
+    senha += letrasMinusculas[
+    math.floor(math.random()*letrasMinusculas.lenght)
+];
+    }
+    if(checkbox[2].checked){
+    senha += numeros[
+    math.floor(math.random()*numeros.lenght)
+];
+    }
+    if(checkbox[3].checked){
+    senha += simbolos[
+    math.floor(math.random()*simbolos.lenght)
+];
+    }
